@@ -1,0 +1,85 @@
+/* 全局样式 */
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: url(../images/bg.jpg);
+  color: #333333;
+  font-size: 12px;
+  font-family: "微软雅黑", "SimSun", "宋体", "Arial Narrow";
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+}
+select,
+input,
+img {
+  vertical-align: middle;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #606060;
+}
+a:hover {
+  color: orange;
+}
+/*版心*/
+.w {
+  width: 980px;
+  margin: 0 auto;
+}
+/*浮动*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}

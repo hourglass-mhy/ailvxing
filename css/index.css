@@ -1,0 +1,454 @@
+/* 全局样式 */
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: url(../images/bg.jpg);
+  color: #333333;
+  font-size: 12px;
+  font-family: "微软雅黑", "SimSun", "宋体", "Arial Narrow";
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+}
+select,
+input,
+img {
+  vertical-align: middle;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #606060;
+}
+a:hover {
+  color: orange;
+}
+/*版心*/
+.w {
+  width: 980px;
+  margin: 0 auto;
+}
+/*浮动*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+/*S 头部*/
+.header {
+  height: 35px;
+  line-height: 35px;
+  background-color: #000;
+  color: #B4B4B4;
+  font-size: 14px;
+}
+.header a {
+  color: #B4B4B4;
+}
+.header a:hover {
+  color: #ffffff;
+}
+.header .header-left li {
+  float: left;
+}
+.header .header-left li a {
+  padding: 0 5px;
+}
+.header .header-right li {
+  float: left;
+}
+.header .header-right li a {
+  padding: 0 10px;
+}
+.header .header-right li a.msg {
+  background: url(../images/head.png) no-repeat -115px -190px;
+  margin-left: 10px;
+}
+.header .header-right li a.msg:hover {
+  background: url(../images/head.png) no-repeat -148px -206px;
+}
+.header .header-right li a.mail {
+  background: url(../images/head.png) no-repeat -5px -192px;
+  margin-left: 15px;
+}
+.header .header-right li a.mail:hover {
+  background: url(../images/head.png) -36px -208px no-repeat;
+}
+.header .header-right li img {
+  height: 29px;
+  width: 29px;
+  margin: 0 5px;
+}
+/*E 头部*/
+/*S 导航*/
+.nav {
+  /*此处导航条不要给固定高度,随着拉升自然变高*/
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+.nav .nav-logo a {
+  height: 50px;
+  width: 125px;
+  display: block;
+  background: url(../images/logo.png) no-repeat;
+  text-indent: -2000em;
+}
+.nav .nav-main {
+  margin-left: 20px;
+}
+.nav .nav-main li {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  padding-right: 5px;
+  background: url(../images/nav-line.png) no-repeat right 15px;
+}
+.nav .nav-main li a {
+  padding: 0 5px;
+}
+.nav .nav-main li:last-child {
+  background: none;
+}
+.nav .nav-search {
+  margin-top: 10px;
+  border: 1px solid #cccccc;
+}
+.nav .nav-search .search {
+  padding-left: 10px;
+  width: 184px;
+  height: 28px;
+}
+.nav .nav-search .btn-search {
+  width: 32px;
+  height: 30px;
+  background: url(../images/head.png) -110px -126px no-repeat;
+  cursor: pointer;
+}
+.nav .nav-search input {
+  border: 0 none;
+}
+/*E 导航*/
+.line {
+  height: 3px;
+  background: url(../images/bg-line.png);
+}
+/*内容*/
+/*main*/
+.content {
+  /*main*/
+  /*侧边栏*/
+}
+.content .public-title {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid #CCCCCC;
+  padding-left: 10px;
+}
+.content .public-title h3 {
+  font-size: 16px;
+  color: #75C50A;
+}
+.content .main {
+  width: 730px;
+}
+.content .main .slider {
+  width: 710px;
+  height: 355px;
+  padding: 10px 10px 13px;
+  background: #f9f9f9 url(../images/shadow-line.jpg) repeat-x 0 bottom;
+}
+.content .main .slider .wrapper {
+  width: 710px;
+  height: 355px;
+  position: relative;
+  overflow: hidden;
+}
+.content .main .slider .wrapper .imgList {
+  position: absolute;
+  height: 355px;
+  width: 7100px;
+}
+.content .main .slider .wrapper .imgList li {
+  float: left;
+}
+.content .main .slider .wrapper .imgList li img {
+  width: 710px;
+  height: 355px;
+}
+.content .main .slider .wrapper .img-index {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+  background-color: #000;
+}
+.content .main .slider .wrapper .img-index li {
+  float: left;
+  margin: 0 4px;
+}
+.content .main .slider .wrapper .img-index li img {
+  cursor: pointer;
+}
+.content .main .section {
+  margin-top: 10px;
+  background-color: #F9F9F9;
+  padding: 0 10px;
+}
+.content .main .section .public-title h2 {
+  font-size: 20px;
+  color: #75C50A;
+}
+.content .main .section .public-title a {
+  font-size: 14px;
+}
+.content .main .section .section-bottom li {
+  float: left;
+  width: 210px;
+  height: 168px;
+  padding: 10px;
+  margin: 3px;
+  background: url(../images/shadow-bg.png);
+}
+.content .main .section .section-bottom li p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+}
+.content .aside {
+  width: 240px;
+  /*推荐*/
+  /*热门标签*/
+  /*悟语*/
+  /*主题活动*/
+  /*旅行日志*/
+  /*活跃会员*/
+  /*关注我们*/
+}
+.content .aside .recommend {
+  height: 360px;
+  padding: 8px 10px;
+  background-color: #F9F9F9;
+}
+.content .aside .recommend .tittle h2 {
+  font-size: 20px;
+}
+.content .aside .recommend .tittle h2 a {
+  color: #75C50A;
+}
+.content .aside .recommend .view {
+  padding: 0 5px;
+}
+.content .aside .recommend .view img {
+  margin: 10px 0px;
+}
+.content .aside .recommend .view p {
+  text-indent: 2em;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.content .aside .hot-tag {
+  height: 205px;
+  background-color: #F9F9F9;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+.content .aside .hot-tag .tittle h3 {
+  font-size: 16px;
+  color: #75C50A;
+}
+.content .aside .hot-tag .tag-list li {
+  height: 24px;
+  line-height: 24px;
+  float: left;
+  margin: 5px;
+}
+.content .aside .hot-tag .tag-list li a.lev1 {
+  font-size: 23px;
+  color: orange;
+}
+.content .aside .hot-tag .tag-list li a.lev2 {
+  font-size: 18px;
+  color: #75C50A;
+}
+.content .aside .hot-tag .tag-list li a.lev3 {
+  font-size: 15px;
+  color: #606060;
+}
+.content .aside .weibo {
+  height: 305px;
+  background-color: #F9F9F9;
+  margin-top: 10px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.content .aside .weibo .tittle h3 {
+  font-size: 16px;
+  color: #75C50A;
+}
+.content .aside .weibo .share .user-name {
+  padding: 10px 0;
+  border-bottom: 1px dashed #cccccc;
+}
+.content .aside .weibo .share .user-name img {
+  margin-right: 10px;
+}
+.content .aside .weibo .share .user-name h4 {
+  line-height: 30px;
+}
+.content .aside .weibo .share .share-content {
+  text-align: center;
+}
+.content .aside .weibo .share .share-content p {
+  text-align: left;
+  line-height: 20px;
+  margin: 5px 0;
+}
+.content .aside .activity {
+  height: 260px;
+  background-color: #F9F9F9;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.content .aside .activity .tittle h3 {
+  font-size: 16px;
+  color: #75C50A;
+}
+.content .aside .activity .activity-content {
+  margin-top: 10px;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+.content .aside .activity p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+}
+.content .aside .travel-article {
+  height: 265px;
+  background-color: #F9F9F9;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.content .aside .travel-article .article-top {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #cccccc;
+}
+.content .aside .travel-article .article-top img {
+  margin-right: 10px;
+}
+.content .aside .travel-article .article-top h4 {
+  font-size: 14px;
+}
+.content .aside .travel-article .article-top p {
+  margin-top: 15px;
+}
+.content .aside .travel-article ul li {
+  border-bottom: 1px dashed #cccccc;
+  font-size: 13px;
+  padding: 4px;
+}
+.content .aside .active-user {
+  height: 385px;
+  background-color: #F9F9F9;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.content .aside .active-user .user-list li {
+  padding: 10px 5px;
+  border-bottom: 1px dashed #ccc;
+}
+.content .aside .active-user .user-list li img {
+  float: left;
+  margin-right: 10px;
+}
+.content .aside .active-user .user-list li p {
+  line-height: 20px;
+}
+.content .aside .active-user .user-list li p:nth-of-type(2) {
+  color: #cccccc;
+}
+.content .aside .focus-us {
+  height: 260px;
+  background-color: #F9F9F9;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.content .aside .focus-us ul li {
+  float: left;
+  width: 110px;
+  height: 70px;
+}
+.content .aside .focus-us ul li a {
+  display: block;
+  width: 110px;
+  height: 70px;
+}
+.content .aside .focus-us ul li:nth-child(1) a {
+  background: url(../images/sites.png) -222px 0 no-repeat;
+}
+.content .aside .focus-us ul li:nth-child(2) a {
+  background: url(../images/sites.png) -334px -140px no-repeat;
+}
+.content .aside .focus-us ul li:nth-child(3) a {
+  background: url(../images/sites.png) -222px -70px no-repeat;
+}
+.content .aside .focus-us ul li:nth-child(4) a {
+  background: url(../images/sites.png) -334px -70px no-repeat;
+}
+.content .aside .focus-us ul li:nth-child(5) a {
+  background: url(../images/sites.png) -222px -140px no-repeat;
+}
+.content .aside .focus-us ul li:nth-child(6) a {
+  background: url(../images/sites.png) -222px -211px no-repeat;
+}
+/*内容*/
