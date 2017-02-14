@@ -452,3 +452,14 @@ a:hover {
   background: url(../images/sites.png) -222px -211px no-repeat;
 }
 /*内容*/
+/*页脚*/
+.footer {
+  margin-top: 10px;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  font-size: 16px;
+}
+.footer p {
+  line-height: 30px;
+}
+/*页脚*/
